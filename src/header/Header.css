@@ -1,0 +1,20 @@
+.poke-banner {
+    background-color: rgba(211, 211, 211, 0.692);
+}
+
+.poke-banner img {
+    /* max-width: 99%;
+    padding: .5vh .5vw 0 .5vw; */
+    max-height: 35vh;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.header-text {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 1vh 2vw;
+    background-color: rgba(211, 211, 211, 0.692);
+}
