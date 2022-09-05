@@ -15,7 +15,7 @@ class MainCards extends Component {
 
     async componentDidMount() {
         // Grab the first 30 Pokemon to load
-        const firstResponse = await fetch('https://pokeapi.co/api/v2/pokemon/?limit=5');
+        const firstResponse = await fetch('https://pokeapi.co/api/v2/pokemon/?limit=12');
         const firstData = await firstResponse.json();
         this.setState({ firstFifty: firstData.results })
         //  console.log(this.state);

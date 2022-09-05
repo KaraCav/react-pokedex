@@ -1,0 +1,55 @@
+.primary-card>.centering {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.centering>h3 {
+    margin-bottom: 0;
+}
+
+.pokedex-number {
+    font-size: 24px;
+    margin: 0;
+}
+
+.primary-card {
+    position: relative;
+}
+
+.primary-card:hover .poke-sprite {
+    transform: rotateY(180deg);
+}
+
+
+.poke-sprite {
+    position: relative;
+    transition: 0.5s all;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    width: 250px;
+    top: -50px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.front {
+    z-index: 2;
+    transform: rotateX(0deg);
+}
+
+.type-container {
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+}
