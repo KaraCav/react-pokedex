@@ -1,6 +1,7 @@
 import { Component, Fragment } from "react";
 import Banner from "./banner.png";
 import './Header.css';
+import SearchBar from "./SearchBar";
 
 class Header extends Component {
     constructor(props) {
@@ -22,21 +23,7 @@ class Header extends Component {
             <div className="poke-banner">
                 <img src={Banner} alt="pokemon banner" />
             </div>
-            <section className="header-text">
-                <div className="search-bar">
-                    <input type="text" placeholder="Enter name of Pokemon" />
-                    <button> See Stats  </button>
-                </div>
-                <form>
-                    <label>  Pick Your Team:&nbsp;
-                        <select value={this.state.value} onChange={this.handleChange}>
-                            <option selected value="Black">None</option>
-                            <option value="Red">Team Valor</option>
-                            <option value="Blue">Team Blue</option>
-                        </select>
-                    </label>&nbsp;
-                </form>
-            </section>
+            <SearchBar></SearchBar>
         </Fragment>
     }
 }

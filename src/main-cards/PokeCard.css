@@ -23,6 +23,10 @@
     transform: rotateY(180deg);
 }
 
+img {
+    max-height: 250px;
+
+}
 
 .poke-sprite {
     position: relative;
